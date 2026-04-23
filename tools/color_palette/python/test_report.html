@@ -1,0 +1,103 @@
+
+    <html>
+    <head>
+        <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #111; color: #fff; padding: 20px; }
+            .container { display: flex; flex-wrap: wrap; gap: 20px; }
+            .card { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.5); width: 350px; }
+            .img-container { height: 150px; background-size: cover; background-position: center; }
+            .ui-mockup { padding: 20px; }
+            .title { font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+            .subtitle { font-size: 0.9em; opacity: 0.8; margin-bottom: 15px; }
+            .btn { padding: 10px 15px; border-radius: 6px; border: none; font-weight: bold; cursor: pointer; width: 100%; text-align: center; margin-bottom: 15px; }
+            .palette-strip { display: flex; height: 30px; margin-top: 10px; border-radius: 4px; overflow: hidden; }
+            .color-block { flex: 1; }
+            h1 { text-align: center; }
+        </style>
+    </head>
+    <body>
+        <h1>UI Color Palette Extractor Tests</h1>
+        <div class="container">
+    
+        <div class="card" style="background: #31142b; color: #ffffff; border: 1px solid #31142b;">
+            <div class="img-container" style="background-image: url('test_images/dark.jpg');"></div>
+            <div class="ui-mockup">
+                <div class="title" style="color: #31142b;">Dark Test</div>
+                <div class="subtitle">Mockup using extracted palette</div>
+                <div class="btn" style="background: #311443; color: #fff;">Accent Action</div>
+                <div class="btn" style="background: #32143e; color: #ffffff; border: 1px solid #ffffff;">Secondary Action</div>
+                
+                <div style="font-size: 0.8em; margin-top: 20px; opacity: 0.7;">Raw Palette:</div>
+                <div class="palette-strip"><div class="color-block" style="background: #31142b;" title="#31142b"></div><div class="color-block" style="background: #32143e;" title="#32143e"></div><div class="color-block" style="background: #321432;" title="#321432"></div><div class="color-block" style="background: #321338;" title="#321338"></div><div class="color-block" style="background: #311443;" title="#311443"></div></div>
+            </div>
+        </div>
+        
+        <div class="card" style="background: #f9ca64; color: #000000; border: 1px solid #f9ca64;">
+            <div class="img-container" style="background-image: url('test_images/bright.jpg');"></div>
+            <div class="ui-mockup">
+                <div class="title" style="color: #f9ca64;">Bright Test</div>
+                <div class="subtitle">Mockup using extracted palette</div>
+                <div class="btn" style="background: #fadd64; color: #fff;">Accent Action</div>
+                <div class="btn" style="background: #fadd64; color: #000000; border: 1px solid #000000;">Secondary Action</div>
+                
+                <div style="font-size: 0.8em; margin-top: 20px; opacity: 0.7;">Raw Palette:</div>
+                <div class="palette-strip"><div class="color-block" style="background: #f9ca64;" title="#f9ca64"></div><div class="color-block" style="background: #fadd64;" title="#fadd64"></div><div class="color-block" style="background: #f9d764;" title="#f9d764"></div><div class="color-block" style="background: #fad164;" title="#fad164"></div><div class="color-block" style="background: #f9e263;" title="#f9e263"></div></div>
+            </div>
+        </div>
+        
+        <div class="card" style="background: #000000; color: #ffffff; border: 1px solid #000000;">
+            <div class="img-container" style="background-image: url('test_images/contrast.jpg');"></div>
+            <div class="ui-mockup">
+                <div class="title" style="color: #000000;">High_Contrast Test</div>
+                <div class="subtitle">Mockup using extracted palette</div>
+                <div class="btn" style="background: #fd0000; color: #fff;">Accent Action</div>
+                <div class="btn" style="background: #fd0000; color: #ffffff; border: 1px solid #ffffff;">Secondary Action</div>
+                
+                <div style="font-size: 0.8em; margin-top: 20px; opacity: 0.7;">Raw Palette:</div>
+                <div class="palette-strip"><div class="color-block" style="background: #000000;" title="#000000"></div><div class="color-block" style="background: #fd0000;" title="#fd0000"></div><div class="color-block" style="background: #d11312;" title="#d11312"></div><div class="color-block" style="background: #fc0001;" title="#fc0001"></div><div class="color-block" style="background: #2c0000;" title="#2c0000"></div></div>
+            </div>
+        </div>
+        
+        <div class="card" style="background: #d3dcc9; color: #000000; border: 1px solid #d3dcc9;">
+            <div class="img-container" style="background-image: url('test_images/washed.jpg');"></div>
+            <div class="ui-mockup">
+                <div class="title" style="color: #d3dcc9;">Washed_Out Test</div>
+                <div class="subtitle">Mockup using extracted palette</div>
+                <div class="btn" style="background: #d3dcc9; color: #fff;">Accent Action</div>
+                <div class="btn" style="background: #d3dcc9; color: #000000; border: 1px solid #000000;">Secondary Action</div>
+                
+                <div style="font-size: 0.8em; margin-top: 20px; opacity: 0.7;">Raw Palette:</div>
+                <div class="palette-strip"><div class="color-block" style="background: #d3dcc9;" title="#d3dcc9"></div></div>
+            </div>
+        </div>
+        
+        <div class="card" style="background: #ffffff; color: #000000; border: 1px solid #ffffff;">
+            <div class="img-container" style="background-image: url('test_images/white.jpg');"></div>
+            <div class="ui-mockup">
+                <div class="title" style="color: #ffffff;">All_White Test</div>
+                <div class="subtitle">Mockup using extracted palette</div>
+                <div class="btn" style="background: #ffffff; color: #fff;">Accent Action</div>
+                <div class="btn" style="background: #ffffff; color: #000000; border: 1px solid #000000;">Secondary Action</div>
+                
+                <div style="font-size: 0.8em; margin-top: 20px; opacity: 0.7;">Raw Palette:</div>
+                <div class="palette-strip"><div class="color-block" style="background: #ffffff;" title="#ffffff"></div></div>
+            </div>
+        </div>
+        
+        <div class="card" style="background: #000000; color: #ffffff; border: 1px solid #000000;">
+            <div class="img-container" style="background-image: url('test_images/black.jpg');"></div>
+            <div class="ui-mockup">
+                <div class="title" style="color: #000000;">All_Black Test</div>
+                <div class="subtitle">Mockup using extracted palette</div>
+                <div class="btn" style="background: #000000; color: #fff;">Accent Action</div>
+                <div class="btn" style="background: #000000; color: #ffffff; border: 1px solid #ffffff;">Secondary Action</div>
+                
+                <div style="font-size: 0.8em; margin-top: 20px; opacity: 0.7;">Raw Palette:</div>
+                <div class="palette-strip"><div class="color-block" style="background: #000000;" title="#000000"></div></div>
+            </div>
+        </div>
+        
+        </div>
+    </body>
+    </html>
+    
